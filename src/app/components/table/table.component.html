@@ -1,0 +1,32 @@
+<section class="my-14">
+  <div class="overflow-x-auto">
+    <table class="table-md table w-full">
+      <!-- head -->
+      <thead>
+        <tr>
+          <th class="text-white">#</th>
+          <th class="text-white">Método</th>
+          <th class="text-white">Ejemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- row 1 -->
+        <!--! iteramos con @for-->
+        @for (method of methods(); track method.id; let i = $index) {
+          <tr>
+            <td>{{ method.id }}</td>
+            <td>{{ method.name }}</td>
+            <!-- <td>
+              <a routerLink="{{ method.route }}">{{ method.route }}</a>
+            </td> -->
+            <td>
+              <a class="link link-accent" routerLink="{{ method.route }}">{{
+                method.name
+              }}</a>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</section>
