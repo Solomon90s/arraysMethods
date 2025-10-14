@@ -1,12 +1,13 @@
-<section>
+<section class="my-14">
   <div class="overflow-x-auto">
     <table class="table-md table w-full">
       <!-- head -->
       <thead>
         <tr>
-          <th>#</th>
-          <th>Método</th>
-          <th>Ejemplo</th>
+          <th class="text-white">#</th>
+          <th class="text-white">Método</th>
+          <th class="text-white">Ejemplo</th>
+          <th class="text-white">Documentación oficial</th>
         </tr>
       </thead>
       <tbody>
@@ -19,7 +20,20 @@
             <!-- <td>
               <a routerLink="{{ method.route }}">{{ method.route }}</a>
             </td> -->
-            <a routerLink="{{ method.route }}">{{ method.name }}</a>
+            <td>
+              <a class="link link-accent" routerLink="{{ method.route }}">{{
+                method.name
+              }}</a>
+            </td>
+            <td>
+              <a
+                class="link link-error"
+                [href]="method.documentation"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Documentación oficial</a
+              >
+            </td>
           </tr>
         }
       </tbody>
