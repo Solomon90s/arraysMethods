@@ -1,4 +1,4 @@
-<section class="animate-fade-in w-full flex-row px-10 transition-all">
+<section class="animate-fade-in min-h-dvh w-full flex-row px-10 transition-all">
   <hgroup>
     <h1 class="text-3xl font-bold">Map</h1>
     <h3 class="mt-5 text-lg">
@@ -11,11 +11,12 @@
     Array original: <strong>{{ numbers() | json }}</strong>
   </p>
   <p class="py-5">
-    Array utilizando el método map en el cual sumamos +1 a cada elemento del
-    array original: <strong>{{ resultArray | json }}</strong>
+    Resultado al utilizar el método map en el cual sumamos +1 a cada elemento
+    del array original: <strong>{{ resultArray | json }}</strong>
   </p>
   <figure class="py-5">
     <img
+      loading="lazy"
       class="rounded-xs border p-1"
       src="./assets/images/map.webp"
       alt="Ejemplo de código en typescript"

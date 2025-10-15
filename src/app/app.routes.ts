@@ -18,6 +18,21 @@ export const routes: Routes = [
     title: 'Método filter',
   },
   {
+    path: 'forEach',
+    loadComponent: () => import('./pages/forEach-page/forEach-page.component'),
+    title: 'Método forEach',
+  },
+  {
+    path: 'find',
+    loadComponent: () => import('./pages/find-page/find-page.component'),
+    title: 'Método find',
+  },
+  {
+    path: 'sort',
+    loadComponent: () => import('./pages/sort-page/sort-page.component'),
+    title: 'Método sort',
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',

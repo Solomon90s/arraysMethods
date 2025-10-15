@@ -1,6 +1,10 @@
 {
   "name": "arrays-methods",
   "version": "0.0.0",
+  "author": {
+    "name": "JMHadga",
+    "url": "https://github.com/Solomon90s"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

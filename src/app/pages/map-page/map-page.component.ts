@@ -7,7 +7,6 @@ import { Component, signal, WritableSignal } from '@angular/core';
   templateUrl: './map-page.component.html',
 })
 export default class MapPageComponent {
-  
   numbers: WritableSignal<number[]> = signal<number[]>([
     1, 2, 3, 4, 5, 6, 7, 8,
   ]);

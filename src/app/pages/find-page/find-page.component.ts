@@ -2,16 +2,16 @@ import { JsonPipe } from '@angular/common';
 import { Component, signal, WritableSignal } from '@angular/core';
 
 @Component({
-  selector: 'app-filter-page',
+  selector: 'app-find-page',
   imports: [JsonPipe],
-  templateUrl: './filter-page.component.html',
+  templateUrl: './find-page.component.html',
 })
-export default class FilterPageComponent {
+export default class FindPageComponent {
   numbers: WritableSignal<number[]> = signal<number[]>([
     1, 2, 3, 4, 5, 6, 7, 8,
   ]);
 
-  resultArray = this.numbers().filter(
-    (element) => element === 3 || element === 7,
+  resultArray: number | undefined = this.numbers().find(
+    (element: number): boolean => element > 3,
   );
 }

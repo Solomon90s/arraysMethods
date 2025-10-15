@@ -1,24 +1,24 @@
 <section class="animate-fade-in min-h-dvh w-full flex-row px-10 transition-all">
   <hgroup>
-    <h1 class="text-3xl font-bold">Filter</h1>
+    <h1 class="text-3xl font-bold">Find</h1>
     <h3 class="mt-5 text-lg">
-      El método <span class="font-bold text-red-500">filter() </span> recorre el
-      array y retorna un nuevo array con aquellos elementos que pasen una
-      determinada condición.
+      El método <span class="font-bold text-red-500">find() </span> recorre el
+      array y retorna la primera coincidencia del elemento que se busca.
     </h3>
   </hgroup>
   <p class="py-5">
     Array original<strong>: {{ numbers() | json }}</strong>
   </p>
   <p class="py-5">
-    Resultado al utilizar el método filter en el cual le decimos que nos muestre
-    los números que sean igual a 3 o 7:
+    Resultado al utilizar el método find en el cual le decimos que nos muestre
+    los números que sean mayor que 3, devuelve la primera coincidencia:
     <strong> {{ resultArray | json }}</strong>
   </p>
   <figure class="py-5">
     <img
+      loading="lazy"
       class="rounded-xs border p-1"
-      src="./assets/images/filter.webp"
+      src="./assets/images/find.webp"
       alt="Ejemplo de código en typescript"
     />
     <figcaption>Ejemplo de código en el componente de typescript.</figcaption>

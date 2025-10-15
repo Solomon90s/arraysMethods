@@ -1,0 +1,37 @@
+<section class="animate-fade-in min-h-dvh w-full flex-row px-10 transition-all">
+  <hgroup>
+    <h1 class="text-3xl font-bold">Sort</h1>
+    <h3 class="mt-5 text-lg">
+      El método <span class="font-bold text-red-500">sort() </span> ordena los
+      elementos del array y retorna el arreglo ordenado. Los elementos se
+      ordenarán en orden ascendente (de la A a la Z) por defecto.
+    </h3>
+  </hgroup>
+  <p class="py-5">
+    Array de números original<strong>: {{ disorderedNumbers() | json }}</strong>
+  </p>
+  <p class="py-5">
+    Resultado al utilizar el método sort y ordenar los números de manera
+    descendente:
+    <strong> {{ descNumbers | json }}</strong>
+  </p>
+  <p class="py-5">
+    Array de letras original<strong
+      >: {{ disorderedAlphabets() | json }}</strong
+    >
+  </p>
+  <p class="py-5">
+    Resultado al utilizar el método sort y ordenar las letras de manera
+    ascendente:
+    <strong> {{ ascAlphabets | json }}</strong>
+  </p>
+  <figure class="py-5">
+    <img
+      loading="lazy"
+      class="rounded-xs border p-1"
+      src="./assets/images/sort.webp"
+      alt="Ejemplo de código en typescript"
+    />
+    <figcaption>Ejemplo de código en el componente de typescript.</figcaption>
+  </figure>
+</section>
