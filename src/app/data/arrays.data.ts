@@ -36,4 +36,25 @@ export const arrays: ArraysMethods[] = [
     documentation:
       'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort',
   },
+  {
+    id: 6,
+    name: 'some',
+    route: '/some',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/some',
+  },
+  {
+    id: 7,
+    name: 'every',
+    route: '/every',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/every',
+  },
+  {
+    id: 8,
+    name: 'concat',
+    route: '/concat',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/concat',
+  },
 ];

@@ -33,6 +33,21 @@ export const routes: Routes = [
     title: 'Método sort',
   },
   {
+    path: 'some',
+    loadComponent: () => import('./pages/some-page/some-page.component'),
+    title: 'Método some',
+  },
+  {
+    path: 'every',
+    loadComponent: () => import('./pages/every-page/every-page.component'),
+    title: 'Método every',
+  },
+  {
+    path: 'concat',
+    loadComponent: () => import('./pages/concat-page/concat-page.component'),
+    title: 'Método concat',
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',

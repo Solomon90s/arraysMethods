@@ -1,0 +1,29 @@
+<section class="animate-fade-in min-h-dvh w-full flex-row px-10 transition-all">
+  <hgroup>
+    <h1 class="text-3xl font-bold">Concat</h1>
+    <h3 class="mt-5 text-lg">
+      El método <span class="font-bold text-red-500">concat() </span> se utiliza
+      para unir dos o más arrays. Este método no cambia los arrays existentes,
+      sino que devuelve un nuevo array .
+    </h3>
+  </hgroup>
+  <p class="py-5">
+    Primer array original: <strong>{{ firstNumbers() | json }}</strong>
+  </p>
+  <p class="py-5">
+    Segundo array original: <strong>{{ secondNumbers() | json }}</strong>
+  </p>
+  <p class="py-5">
+    Resultado al utilizar el método concat en el cual concatena ambos arrays:
+    <strong>{{ resultArray | json }}</strong>
+  </p>
+  <figure class="py-5">
+    <img
+      loading="lazy"
+      class="rounded-xs border p-1"
+      src="./assets/images/concat.webp"
+      alt="Ejemplo de código en typescript"
+    />
+    <figcaption>Ejemplo de código en el componente de typescript.</figcaption>
+  </figure>
+</section>
