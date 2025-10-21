@@ -48,6 +48,21 @@ export const routes: Routes = [
     title: 'Método concat',
   },
   {
+    path: 'includes',
+    loadComponent: () => import('./pages/includes-page/includes-page'),
+    title: 'Método includes',
+  },
+  {
+    path: 'join',
+    loadComponent: () => import('./pages/join-page/join-page.component'),
+    title: 'Método join',
+  },
+  {
+    path: 'reduce',
+    loadComponent: () => import('./pages/reduce-page/reduce-page.component'),
+    title: 'Método reduce',
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',

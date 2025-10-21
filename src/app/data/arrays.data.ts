@@ -57,4 +57,25 @@ export const arrays: ArraysMethods[] = [
     documentation:
       'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/concat',
   },
+  {
+    id: 9,
+    name: 'includes',
+    route: '/includes',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/includes',
+  },
+  {
+    id: 10,
+    name: 'join',
+    route: '/join',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/join',
+  },
+  {
+    id: 11,
+    name: 'reduce',
+    route: '/reduce',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce',
+  },
 ];

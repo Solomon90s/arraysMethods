@@ -1,0 +1,27 @@
+<section class="animate-fade-in min-h-dvh w-full flex-row px-10 transition-all">
+  <hgroup>
+    <h1 class="text-3xl font-bold">Reduce</h1>
+    <h3 class="mt-5 text-lg">
+      El método
+      <span class="font-bold text-red-500">reduce() </span> aplica una función a
+      un acumulador y a cada valor de una array (de izquierda a derecha) para
+      reducirlo a un único valor. Podemos usar cualquier operador matemático.
+    </h3>
+  </hgroup>
+  <p class="py-5">
+    Array original: <strong>{{ numbers() | json }}</strong>
+  </p>
+  <p class="py-5">
+    Resultado al usar el método reduce:
+    <strong>{{ numbersReduce | json }}</strong>
+  </p>
+  <figure class="py-5">
+    <img
+      loading="lazy"
+      class="rounded-xs border p-1"
+      src="./assets/images/reduce.webp"
+      alt="Ejemplo de código en typescript"
+    />
+    <figcaption>Ejemplo de código en el componente de typescript.</figcaption>
+  </figure>
+</section>
