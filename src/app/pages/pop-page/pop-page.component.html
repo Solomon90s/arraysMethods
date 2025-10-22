@@ -1,0 +1,30 @@
+<section class="animate-fade-in min-h-dvh w-full flex-row px-10 transition-all">
+  <hgroup>
+    <h1 class="text-3xl font-bold">pop</h1>
+    <h3 class="mt-5 text-lg">
+      El método <span class="font-bold text-red-500">pop() </span> elimina el
+      último elemento de un array y lo devuelve. Este método cambia la longitud
+      del array.
+    </h3>
+  </hgroup>
+  <p class="py-5">
+    Array original<strong>: {{ fruitsOriginal | json }}</strong>
+  </p>
+  <p class="py-5">
+    Resultado al utilizar el método pop:
+    <strong> {{ fruits() | json }}</strong>
+  </p>
+  <p class="py-5">
+    Longitud del array después de utilizar el método pop:
+    <strong> {{ fruits().length | json }}</strong>
+  </p>
+  <figure class="py-5">
+    <img
+      loading="lazy"
+      class="rounded-xs border p-1"
+      src="./assets/images/pop.webp"
+      alt="Ejemplo de código en typescript"
+    />
+    <figcaption>Ejemplo de código en el componente de typescript.</figcaption>
+  </figure>
+</section>

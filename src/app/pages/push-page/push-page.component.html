@@ -1,0 +1,29 @@
+<section class="animate-fade-in min-h-dvh w-full flex-row px-10 transition-all">
+  <hgroup>
+    <h1 class="text-3xl font-bold">push</h1>
+    <h3 class="mt-5 text-lg">
+      El método <span class="font-bold text-red-500">push() </span> añade uno o
+      más elementos al final de un array y devuelve la nueva longitud del array.
+    </h3>
+  </hgroup>
+  <p class="py-5">
+    Array original<strong>: {{ gamesCopy | json }}</strong>
+  </p>
+  <p class="py-5">
+    Resultado al utilizar el método push:
+    <strong> {{ addingGame | json }}</strong>
+  </p>
+  <p class="py-5">
+    Array después de usar el método push:
+    <strong> {{ games() | json }}</strong>
+  </p>
+  <figure class="py-5">
+    <img
+      loading="lazy"
+      class="rounded-xs border p-1"
+      src="./assets/images/push.webp"
+      alt="Ejemplo de código en typescript"
+    />
+    <figcaption>Ejemplo de código en el componente de typescript.</figcaption>
+  </figure>
+</section>

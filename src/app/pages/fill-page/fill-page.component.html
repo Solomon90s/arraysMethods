@@ -1,0 +1,26 @@
+<section class="animate-fade-in min-h-dvh w-full flex-row px-10 transition-all">
+  <hgroup>
+    <h1 class="text-3xl font-bold">fill</h1>
+    <h3 class="mt-5 text-lg">
+      El método <span class="font-bold text-red-500">fill() </span> cambia todos
+      los elementos de un array por un valor estático, desde el índice de inicio
+      hasta el índice final. Devuelve el array modificado.
+    </h3>
+  </hgroup>
+  <p class="py-5">
+    Array original<strong>: {{ numbers() | json }}</strong>
+  </p>
+  <p class="py-5">
+    Resultado al utilizar el método fill:
+    <strong> {{ fillWithTen | json }}</strong>
+  </p>
+  <figure class="py-5">
+    <img
+      loading="lazy"
+      class="rounded-xs border p-1"
+      src="./assets/images/fill.webp"
+      alt="Ejemplo de código en typescript"
+    />
+    <figcaption>Ejemplo de código en el componente de typescript.</figcaption>
+  </figure>
+</section>

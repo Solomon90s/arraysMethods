@@ -78,4 +78,39 @@ export const arrays: ArraysMethods[] = [
     documentation:
       'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce',
   },
+  {
+    id: 12,
+    name: 'indexOf',
+    route: '/indexOf',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf',
+  },
+  {
+    id: 13,
+    name: 'findIndex',
+    route: '/findIndex',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex',
+  },
+  {
+    id: 14,
+    name: 'fill',
+    route: '/fill',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/fill',
+  },
+  {
+    id: 15,
+    name: 'push',
+    route: '/push',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/push',
+  },
+  {
+    id: 16,
+    name: 'pop',
+    route: '/pop',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/pop',
+  },
 ];

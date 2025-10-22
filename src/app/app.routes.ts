@@ -63,6 +63,32 @@ export const routes: Routes = [
     title: 'Método reduce',
   },
   {
+    path: 'indexOf',
+    loadComponent: () => import('./pages/indexOf-page/indexOf-page.component'),
+    title: 'Método indexOf',
+  },
+  {
+    path: 'findIndex',
+    loadComponent: () =>
+      import('./pages/findIndex-page/findIndex-page.component'),
+    title: 'Método findIndex',
+  },
+  {
+    path: 'fill',
+    loadComponent: () => import('./pages/fill-page/fill-page.component'),
+    title: 'Método fill',
+  },
+  {
+    path: 'push',
+    loadComponent: () => import('./pages/push-page/push-page.component'),
+    title: 'Método push',
+  },
+  {
+    path: 'pop',
+    loadComponent: () => import('./pages/pop-page/pop-page.component'),
+    title: 'Método pop',
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',
