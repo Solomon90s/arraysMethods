@@ -113,4 +113,11 @@ export const arrays: ArraysMethods[] = [
     documentation:
       'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/pop',
   },
+  {
+    id: 17,
+    name: 'shift',
+    route: '/shift',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/shift',
+  },
 ];

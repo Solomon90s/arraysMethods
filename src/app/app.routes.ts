@@ -89,6 +89,11 @@ export const routes: Routes = [
     title: 'Método pop',
   },
   {
+    path: 'shift',
+    loadComponent: () => import('./pages/shift-page/shift-page.component'),
+    title: 'Método shift',
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',
