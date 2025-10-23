@@ -120,4 +120,25 @@ export const arrays: ArraysMethods[] = [
     documentation:
       'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/shift',
   },
+  {
+    id: 18,
+    name: 'unshift',
+    route: '/unshift',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift',
+  },
+  {
+    id: 19,
+    name: 'slice',
+    route: '/slice',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/slice',
+  },
+  {
+    id: 20,
+    name: 'reverse',
+    route: '/reverse',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse',
+  },
 ];

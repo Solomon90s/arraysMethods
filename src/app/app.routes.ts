@@ -94,6 +94,21 @@ export const routes: Routes = [
     title: 'Método shift',
   },
   {
+    path: 'unshift',
+    loadComponent: () => import('./pages/unshift-page/unshift-page.component'),
+    title: 'Método unshift',
+  },
+  {
+    path: 'slice',
+    loadComponent: () => import('./pages/slice-page/slice-page.component'),
+    title: 'Método slice',
+  },
+  {
+    path: 'reverse',
+    loadComponent: () => import('./pages/reverse-page/reverse-page.component'),
+    title: 'Método reverse',
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',
