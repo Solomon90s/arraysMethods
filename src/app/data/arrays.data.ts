@@ -141,4 +141,11 @@ export const arrays: ArraysMethods[] = [
     documentation:
       'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse',
   },
+  {
+    id: 21,
+    name: 'splice',
+    route: '/splice',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/splice',
+  },
 ];

@@ -1,0 +1,49 @@
+<section class="animate-fade-in min-h-dvh w-full flex-row px-10 transition-all">
+  <hgroup>
+    <h1 class="text-3xl font-bold">splice</h1>
+    <h3 class="mt-5 text-lg">
+      El método <span class="font-bold text-red-500">splice() </span> cambia el
+      contenido de un array eliminando elementos existentes y/o agregando nuevos
+      elementos.
+    </h3>
+  </hgroup>
+  <p class="py-5">
+    Array original<strong>: {{ tasks | json }}</strong>
+  </p>
+  @if (tasks.length >= 1) {
+    <ul class="mt-5">
+      @for (task of tasks; track $index) {
+        <li>
+          {{ task }}
+        </li>
+      }
+      <div class="buttons flex w-60 flex-col py-5">
+        <button
+          (click)="replaceTask(0)"
+          class="btn btn-info mt-5 p-8 text-balance"
+        >
+          Remplazar elemento en el índice que le pasemos como argumento.
+        </button>
+        <button
+          (click)="removeTask(0)"
+          class="btn btn-error mt-5 p-8 text-balance"
+        >
+          Eliminar elemento en el índice que le pasemos como argumento.
+        </button>
+      </div>
+    </ul>
+  }
+  <!---->
+  @else {
+    No hay elementos en el array
+  }
+  <figure class="py-5">
+    <img
+      loading="lazy"
+      class="rounded-xs border p-1"
+      src="./assets/images/splice.webp"
+      alt="Ejemplo de código en typescript"
+    />
+    <figcaption>Ejemplo de código en el componente de typescript.</figcaption>
+  </figure>
+</section>

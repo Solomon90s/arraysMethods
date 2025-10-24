@@ -109,6 +109,11 @@ export const routes: Routes = [
     title: 'Método reverse',
   },
   {
+    path: 'splice',
+    loadComponent: () => import('./pages/splice-page/splice-page.component'),
+    title: 'Método splice',
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',
