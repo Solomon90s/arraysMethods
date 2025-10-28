@@ -114,6 +114,27 @@ export const routes: Routes = [
     title: 'Método splice',
   },
   {
+    path: 'lastIndexOf',
+    loadComponent: () =>
+      import('./pages/lastIndexOf-page/lastIndexOf-page.component'),
+    title: 'Método lastIndexOf',
+  },
+  {
+    path: 'flat',
+    loadComponent: () => import('./pages/flat-page/flat-page.component'),
+    title: 'Método flat',
+  },
+  {
+    path: 'isArray',
+    loadComponent: () => import('./pages/isArray-page/isArray-page.component'),
+    title: 'Método isArray',
+  },
+  {
+    path: 'from',
+    loadComponent: () => import('./pages/from-page/from-page.component'),
+    title: 'Método from',
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',

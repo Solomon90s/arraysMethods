@@ -1,24 +1,25 @@
 <section class="animate-fade-in w-full flex-row px-10 transition-all">
   <hgroup>
-    <h1 class="text-3xl font-bold">slice</h1>
+    <h1 class="text-3xl font-bold">lastIndexOf</h1>
     <h3 class="mt-5 text-lg">
-      El método <span class="font-bold text-red-500">slice() </span> devuelve
-      una copia de una parte del array dentro de un nuevo array empezando por
-      inicio hasta fin (fin no incluido). El array original no se modificará.
+      El método
+      <span class="font-bold text-red-500">lastIndexOf() </span> busca un
+      elemento en un array y devuelve su posición. Comienza buscando por el
+      final del array. Retorna -1 si el elemento no se encontrara.
     </h3>
   </hgroup>
   <p class="py-5">
-    Array original:<strong> {{ alphabets() | json }}</strong>
+    Array original:<strong> {{ fruits | json }}</strong>
   </p>
   <p class="py-5">
-    Resultado al utilizar el método slice:
+    Resultado al utilizar el método lastIndexOf:
     <strong> {{ resultArray | json }}</strong>
   </p>
   <figure class="py-5">
     <img
       loading="lazy"
       class="rounded-xs border p-1"
-      src="./assets/images/slice.webp"
+      src="./assets/images/lastIndexOf.webp"
       alt="Ejemplo de código en typescript"
     />
     <figcaption>Ejemplo de código en el componente de typescript.</figcaption>

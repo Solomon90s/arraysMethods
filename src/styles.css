@@ -2,3 +2,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 @plugin "@midudev/tailwind-animations";
+
+strong {
+  color: red;
+}

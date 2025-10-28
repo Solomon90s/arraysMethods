@@ -148,4 +148,32 @@ export const arrays: ArraysMethods[] = [
     documentation:
       'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/splice',
   },
+  {
+    id: 22,
+    name: 'lastIndexOf',
+    route: '/lastIndexOf',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf',
+  },
+  {
+    id: 23,
+    name: 'flat',
+    route: '/flat',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/flat',
+  },
+  {
+    id: 24,
+    name: 'isArray',
+    route: '/isArray',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray',
+  },
+  {
+    id: 25,
+    name: 'from',
+    route: '/from',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/from',
+  },
 ];
