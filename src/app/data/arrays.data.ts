@@ -176,4 +176,18 @@ export const arrays: ArraysMethods[] = [
     documentation:
       'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/from',
   },
+  {
+    id: 26,
+    name: 'toReversed',
+    route: '/toReversed',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed',
+  },
+  {
+    id: 27,
+    name: 'toSorted',
+    route: '/toSorted',
+    documentation:
+      'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted',
+  },
 ];

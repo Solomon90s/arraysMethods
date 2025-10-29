@@ -135,6 +135,18 @@ export const routes: Routes = [
     title: 'Método from',
   },
   {
+    path: 'toReversed',
+    loadComponent: () =>
+      import('./pages/toReversed-page/toReversed-page.component'),
+    title: 'Método toReversed',
+  },
+  {
+    path: 'toSorted',
+    loadComponent: () =>
+      import('./pages/toSorted-page/toSorted-page.component'),
+    title: 'Método toSorted',
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',
