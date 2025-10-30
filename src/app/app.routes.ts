@@ -147,6 +147,17 @@ export const routes: Routes = [
     title: 'Método toSorted',
   },
   {
+    path: 'toSpliced',
+    loadComponent: () =>
+      import('./pages/toSpliced-page/toSpliced-page.component'),
+    title: 'Método toSpliced',
+  },
+  {
+    path: 'with',
+    loadComponent: () => import('./pages/with-page/with-page.component'),
+    title: 'Método with',
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',

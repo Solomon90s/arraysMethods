@@ -1,0 +1,26 @@
+<section class="animate-fade-in w-full flex-row px-10 transition-all">
+  <hgroup>
+    <h1 class="text-3xl font-bold">with</h1>
+    <h3 class="mt-5 text-lg">
+      El método <span class="font-bold text-red-500">with </span> es muy
+      interesante ya que viene a sustituir la asignación de un índice de un
+      array. Devuelve un nuevo array con el nuevo elemento asignado en la
+      posición indicada y no modifica el original.
+    </h3>
+  </hgroup>
+  <p class="py-5">
+    Array original:<strong> {{ arrayOriginal | json }}</strong>
+  </p>
+  <p class="py-5">
+    Resultado de usar el método with:<strong> {{ resultArray | json }}</strong>
+  </p>
+  <figure class="py-5">
+    <img
+      loading="lazy"
+      class="rounded-xs border p-1"
+      src="./assets/images/with.webp"
+      alt="Ejemplo de código en typescript"
+    />
+    <figcaption>Ejemplo de código en el componente de typescript.</figcaption>
+  </figure>
+</section>

@@ -1,5 +1,14 @@
-<app-navbar />
+<!-- <app-navbar />
 <section class="min-h-screen">
   <router-outlet />
 </section>
-<app-footer />
+<app-footer /> -->
+
+<!--! Para que el footer esté siempre abajo da igual lo que ocupe el contenido-->
+<div class="flex min-h-screen flex-col">
+  <app-navbar></app-navbar>
+  <main class="flex-1">
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer></app-footer>
+</div>

@@ -1,5 +1,5 @@
 export interface ArraysMethods {
-  id: number;
+  id: string;
   name: string;
   route: string;
   documentation: string;
