@@ -1,13 +1,12 @@
 <section class="animate-fade-in w-full flex-row px-10 transition-all">
   <hgroup>
-    <h1 class="text-3xl font-bold">splice</h1>
-    <h3 class="mt-5 text-lg">
-      El método <span class="font-bold text-red-500">splice() </span> cambia el
-      contenido de un array eliminando elementos existentes y/o agregando nuevos
-      elementos.
+    <h1>splice</h1>
+    <h3>
+      El método <span>splice() </span> cambia el contenido de un array
+      eliminando elementos existentes y/o agregando nuevos elementos.
     </h3>
   </hgroup>
-  <p class="py-5">
+  <p>
     Array original:<strong> {{ tasks | json }}</strong>
   </p>
   @if (tasks.length >= 1) {
@@ -37,7 +36,7 @@
   @else {
     No hay elementos en el array
   }
-  <figure class="py-5">
+  <figure>
     <img
       loading="lazy"
       class="rounded-xs border p-1"

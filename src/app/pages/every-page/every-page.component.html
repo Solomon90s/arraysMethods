@@ -1,22 +1,21 @@
 <section class="animate-fade-in w-full flex-row px-10 transition-all">
   <hgroup>
-    <h1 class="text-3xl font-bold">Every</h1>
-    <h3 class="mt-5 text-lg">
-      El método <span class="font-bold text-red-500">every() </span> es parecido
-      al some(), ya que itera el array y retorna un booleano. Pero esta vez,
-      para que dicho booleano sea true todos los elementos del array deberán
-      pasar la condición dada.
+    <h1>Every</h1>
+    <h3>
+      El método <span>every() </span> es parecido al some(), ya que itera el
+      array y retorna un booleano. Pero esta vez, para que dicho booleano sea
+      true todos los elementos del array deberán pasar la condición dada.
     </h3>
   </hgroup>
-  <p class="py-5">
+  <p>
     Array original: <strong>{{ numbers() | json }}</strong>
   </p>
-  <p class="py-5">
+  <p>
     Resultado al utilizar el método every en el cual le decimos que si todos los
     elementos del array son mayores de 2:
     <strong>{{ isGreaterThanTwo | json }}</strong>
   </p>
-  <figure class="py-5">
+  <figure>
     <img
       loading="lazy"
       class="rounded-xs border p-1"

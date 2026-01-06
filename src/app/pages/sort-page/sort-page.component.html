@@ -1,29 +1,29 @@
 <section class="animate-fade-in w-full flex-row px-10 transition-all">
   <hgroup>
-    <h1 class="text-3xl font-bold">Sort</h1>
-    <h3 class="mt-5 text-lg">
-      El método <span class="font-bold text-red-500">sort() </span> ordena los
-      elementos del array y retorna el arreglo ordenado. Los elementos se
-      ordenarán en orden ascendente (de la A a la Z) por defecto.
+    <h1>Sort</h1>
+    <h3>
+      El método <span>sort() </span> ordena los elementos del array y retorna el
+      arreglo ordenado. Los elementos se ordenarán en orden ascendente (de la A
+      a la Z) por defecto.
     </h3>
   </hgroup>
-  <p class="py-5">
+  <p>
     Array de números original:<strong> {{ numbers | json }}</strong>
   </p>
-  <p class="py-5">
+  <p>
     Resultado al utilizar el método sort y ordenar los números de manera
     descendente:
     <strong> {{ numbersCloned | json }}</strong>
   </p>
-  <p class="py-5">
+  <p>
     Array de letras original:<strong> {{ alphabets | json }}</strong>
   </p>
-  <p class="py-5">
+  <p>
     Resultado al utilizar el método sort y ordenar las letras de manera
     ascendente:
     <strong> {{ ascAlphabets | json }}</strong>
   </p>
-  <figure class="py-5">
+  <figure>
     <img
       loading="lazy"
       class="rounded-xs border p-1"

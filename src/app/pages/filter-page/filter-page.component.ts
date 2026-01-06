@@ -11,7 +11,7 @@ export default class FilterPageComponent {
     1, 2, 3, 4, 5, 6, 7, 8,
   ]);
 
-  resultArray = this.numbers().filter(
-    (element) => element === 3 || element === 7,
+  resultArray: (3 | 7)[] = this.numbers().filter(
+    (element: number): element is 3 | 7 => element === 3 || element === 7,
   );
 }

@@ -15,7 +15,7 @@ export default class PopPageComponent {
 
   fruitsOriginal: string[] = [...this.fruits()];
 
-  constructor() {
-    this.fruits().pop();
-  }
+  elementDeleted: WritableSignal<(string | undefined)[]> = signal([
+    this.fruits().pop(),
+  ]);
 }

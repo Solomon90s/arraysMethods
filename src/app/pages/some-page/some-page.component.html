@@ -1,22 +1,22 @@
 <section class="animate-fade-in w-full flex-row px-10 transition-all">
   <hgroup>
-    <h1 class="text-3xl font-bold">Some</h1>
-    <h3 class="mt-5 text-lg">
-      El método <span class="font-bold text-red-500">some() </span> itera el
-      array y retorna un booleano si como mínimo uno de los elementos presentes
-      en el array pasa una condición determinada. Recibe un callback que se
-      encargara de preguntar aquello que queremos dentro del array.
+    <h1>Some</h1>
+    <h3>
+      El método <span>some() </span> itera el array y retorna un booleano si
+      como mínimo uno de los elementos presentes en el array pasa una condición
+      determinada. Recibe un callback que se encargara de preguntar aquello que
+      queremos dentro del array.
     </h3>
   </hgroup>
-  <p class="py-5">
+  <p>
     Array original: <strong>{{ numbers() | json }}</strong>
   </p>
-  <p class="py-5">
+  <p>
     Resultado al utilizar el método some en el cual le decimos que si alguno de
     los elementos del array son mayores de 2:
     <strong>{{ isGreaterThanTwo | json }}</strong>
   </p>
-  <figure class="py-5">
+  <figure>
     <img
       loading="lazy"
       class="rounded-xs border p-1"
