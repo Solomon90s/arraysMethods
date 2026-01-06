@@ -1,32 +1,38 @@
 <section class="my-14 px-5">
   <div class="overflow-x-auto">
-    <table class="table-md table w-full">
+    <table class="table-md table w-full min-w-max [&_th]:text-white">
       <!-- head -->
-      <thead>
+      <thead class="hidden md:table-header-group">
         <tr>
-          <th class="text-white">#</th>
-          <th class="text-white">Método</th>
-          <th class="text-white">Ejemplo</th>
-          <th class="text-white">Documentación</th>
+          <th>#</th>
+          <th>Método</th>
+          <th>Ejemplo</th>
+          <th>Documentación</th>
         </tr>
       </thead>
       <tbody>
         <!-- row 1 -->
         <!--! iteramos con @for-->
         @for (method of methods(); track method.id; let i = $index) {
-          <tr>
+          <tr
+            class="mb-5 flex flex-col items-center justify-center p-2 odd:bg-white even:bg-gray-500 md:table-row dark:odd:bg-gray-900/50 dark:even:bg-gray-300/10"
+          >
             <td>{{ i + 1 }}</td>
             <td>{{ method.name }}</td>
             <!-- <td>
               <a routerLink="{{ method.route }}">{{ method.route }}</a>
             </td> -->
             <td>
-              <a class="link link-accent" routerLink="{{ method.route }}">{{
-                method.name
-              }}</a>
+              <a
+                title="Ejemplo de código método {{ method.name }}"
+                class="link link-accent"
+                routerLink="{{ method.route }}"
+                >{{ method.name }}</a
+              >
             </td>
             <td>
               <a
+                title="Documentación oficial método {{ method.name }}"
                 class="link link-error"
                 [href]="method.documentation"
                 target="_blank"

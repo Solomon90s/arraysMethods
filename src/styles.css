@@ -6,3 +6,25 @@
 strong {
   color: red;
 }
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold;
+  }
+
+  h3 {
+    @apply mt-5 text-lg;
+  }
+
+  p {
+    @apply py-5;
+  }
+
+  figure {
+    @apply py-5;
+  }
+
+  span {
+    @apply font-bold text-red-500;
+  }
+}

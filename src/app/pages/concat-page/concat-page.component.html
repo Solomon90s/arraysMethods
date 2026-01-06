@@ -1,23 +1,23 @@
 <section class="animate-fade-in h-[100vh] w-full flex-row px-10 transition-all">
   <hgroup>
-    <h1 class="text-3xl font-bold">Concat</h1>
-    <h3 class="mt-5 text-lg">
-      El método <span class="font-bold text-red-500">concat() </span> se utiliza
-      para unir dos o más arrays. Este método no cambia los arrays existentes,
-      sino que devuelve un nuevo array.
+    <h1>Concat</h1>
+    <h3>
+      El método <span>concat() </span> se utiliza para unir dos o más arrays.
+      Este método no cambia los arrays existentes, sino que devuelve un nuevo
+      array.
     </h3>
   </hgroup>
-  <p class="py-5">
+  <p>
     Primer array original: <strong>{{ firstNumbers() | json }}</strong>
   </p>
-  <p class="py-5">
+  <p>
     Segundo array original: <strong>{{ secondNumbers() | json }}</strong>
   </p>
-  <p class="py-5">
+  <p>
     Resultado al utilizar el método concat en el cual concatena ambos arrays:
     <strong>{{ resultArray | json }}</strong>
   </p>
-  <figure class="py-5">
+  <figure>
     <img
       loading="lazy"
       class="rounded-xs border p-1"

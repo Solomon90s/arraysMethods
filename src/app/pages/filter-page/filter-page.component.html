@@ -1,21 +1,20 @@
 <section class="animate-fade-in w-full flex-row px-10 transition-all">
   <hgroup>
-    <h1 class="text-3xl font-bold">Filter</h1>
-    <h3 class="mt-5 text-lg">
-      El método <span class="font-bold text-red-500">filter() </span> recorre el
-      array y retorna un nuevo array con aquellos elementos que pasen una
-      determinada condición.
+    <h1>Filter</h1>
+    <h3>
+      El método <span>filter() </span> recorre el array y retorna un nuevo array
+      con aquellos elementos que pasen una determinada condición.
     </h3>
   </hgroup>
-  <p class="py-5">
+  <p>
     Array original:<strong> {{ numbers() | json }}</strong>
   </p>
-  <p class="py-5">
+  <p>
     Resultado al utilizar el método filter en el cual le decimos que nos muestre
     los números que sean igual a 3 o 7:
     <strong> {{ resultArray | json }}</strong>
   </p>
-  <figure class="py-5">
+  <figure>
     <img
       class="rounded-xs border p-1"
       src="./assets/images/filter.webp"

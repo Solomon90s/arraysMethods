@@ -19,7 +19,5 @@ export default class SortPageComponent {
     b ? -1 : 1,
   );
 
-  ascAlphabets: string[] = this.alphabetsCloned.sort((a: string, b: string) =>
-    a > b ? 1 : -1,
-  );
+  ascAlphabets: string[] = this.alphabetsCloned.sort();
 }
