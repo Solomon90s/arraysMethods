@@ -1,14 +1,14 @@
 <footer
-  class="footer sm:footer-horizontal bg-base-300 text-neutral-content flex items-center justify-center rounded-xl p-4"
+  class="bg-base-300 flex items-center justify-center rounded-xl shadow-lg"
 >
-  <aside class="grid-flow-col items-center">
-    <p>
-      Copyright &#169; {{ year() }} - Desarrollado con
-      <span class="text-red-600">❤</span>
-    </p>
-  </aside>
-  <nav class="grid-flow-col gap-2 md:place-self-center md:justify-self-end">
+  <p class="flex items-center justify-center gap-2.5">
+    Copyright &#169; {{ year() }} - Desarrollado con
+    <span
+      class="flex items-center text-red-600 transition-all duration-300 hover:scale-150"
+      >❤</span
+    >
     <a
+      title="Perfil de github"
       class="transition-all duration-500 hover:scale-125"
       aria-label="Perfil personal de github"
       href="https://github.com/Solomon90s"
@@ -19,5 +19,5 @@
         <use xlink:href="./assets/sprite-new.svg#github_dark" />
       </svg>
     </a>
-  </nav>
+  </p>
 </footer>

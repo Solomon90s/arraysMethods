@@ -1,15 +1,15 @@
 <section class="animate-fade-in w-full flex-row px-10 transition-all">
   <hgroup>
     <h1>lastIndexOf</h1>
-    <h3>
+    <p>
       El método
-      <span>lastIndexOf() </span> busca un elemento en un array y devuelve su
-      posición. Comienza buscando por el final del array. Retorna -1 si el
-      elemento no se encontrara.
-    </h3>
+      <span>lastIndexOf() </span> devuelve el índice de la última aparición de
+      un elemento. Comienza buscando por el final del array. Retorna -1 si el
+      elemento no se encuentra.
+    </p>
   </hgroup>
   <p>
-    Array original:<strong> {{ fruits | json }}</strong>
+    Array original:<strong> {{ fruits() | json }}</strong>
   </p>
   <p>
     Resultado al utilizar el método lastIndexOf:

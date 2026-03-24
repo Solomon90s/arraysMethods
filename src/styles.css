@@ -9,15 +9,15 @@ strong {
 
 @layer base {
   h1 {
-    @apply text-3xl font-bold;
+    @apply text-3xl font-bold text-balance;
   }
 
   h3 {
-    @apply mt-5 text-lg;
+    @apply mt-5 text-lg text-balance;
   }
 
   p {
-    @apply py-5;
+    @apply py-5 text-[1rem] text-pretty;
   }
 
   figure {
