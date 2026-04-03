@@ -1,0 +1,4 @@
+Los componentes hijos son los botones de next y previous.
+Los componentes padres son las páginas de los métodos de los arrays.
+Lo que queremos hacer es crear la comunicación del hijo (botones) al padre(página de métodos de los arrays).
+En los componentes hijos intentar leer rutas del fichero routes y así con los métodos de nextPage y previousPage poder navegar a las rutas.

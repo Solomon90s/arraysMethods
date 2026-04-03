@@ -3,21 +3,35 @@
 @plugin "daisyui";
 @plugin "@midudev/tailwind-animations";
 
+@theme {
+  --font-sans: "Jost", serif, system-ui;
+}
+
+@layer base {
+  @font-face {
+    font-display: swap;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/assets/fonts/Jost-Medium.woff2") format("woff2");
+  }
+}
+
 strong {
   color: red;
 }
 
 @layer base {
   h1 {
-    @apply text-3xl font-bold text-balance;
+    @apply text-center text-5xl font-bold tracking-wide text-balance underline;
   }
 
   h3 {
-    @apply mt-5 text-lg text-balance;
+    @apply mt-5 text-lg tracking-wide text-balance;
   }
 
   p {
-    @apply py-5 text-[1rem] text-pretty;
+    @apply py-5 text-[1.1rem] tracking-wide text-pretty;
   }
 
   figure {
@@ -26,5 +40,13 @@ strong {
 
   span {
     @apply font-bold text-red-500;
+  }
+
+  th {
+    @apply text-[1rem] tracking-wide;
+  }
+
+  td {
+    @apply text-[1rem];
   }
 }

@@ -1,12 +1,17 @@
 import { JsonPipe } from '@angular/common';
-import { Component, signal, WritableSignal } from '@angular/core';
+import { Component, inject, signal, WritableSignal } from '@angular/core';
+import { Router } from '@angular/router';
+import { ButtonPreviousPageComponent } from "@components/button-previous-page/button-previous-page.component";
+import { ButtonNextPageComponent } from "@components/button-next-page/button-next-page.component";
 
 @Component({
   selector: 'app-join-page',
-  imports: [JsonPipe],
+  imports: [JsonPipe, ButtonPreviousPageComponent, ButtonNextPageComponent],
   templateUrl: './join-page.component.html',
 })
 export default class JoinPageComponent {
+  private router: Router = inject(Router);
+
   alphabets: WritableSignal<string[]> = signal<string[]>([
     'a',
     'b',
@@ -23,5 +28,13 @@ export default class JoinPageComponent {
     console.log(
       `Resultado al unir todos los caracteres. ${this.alphabets().join('')}`,
     );
+  }
+
+  public nextPage(): void {
+    this.router.navigate(['reduce']);
+  }
+
+  public previousPage(): void {
+    this.router.navigate(['includes']);
   }
 }

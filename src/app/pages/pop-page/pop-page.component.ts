@@ -1,13 +1,18 @@
 import { JsonPipe } from '@angular/common';
-import { Component, signal, WritableSignal } from '@angular/core';
+import { Component, inject, signal, WritableSignal } from '@angular/core';
+import { ButtonPreviousPageComponent } from '@components/button-previous-page/button-previous-page.component';
+import { ButtonNextPageComponent } from '@components/button-next-page/button-next-page.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pop-page',
-  imports: [JsonPipe],
+  imports: [JsonPipe, ButtonPreviousPageComponent, ButtonNextPageComponent],
   templateUrl: './pop-page.component.html',
 })
 export default class PopPageComponent {
-  fruits: WritableSignal<string[]> = signal<string[]>([
+  private router: Router = inject(Router);
+
+  public fruits: WritableSignal<string[]> = signal<string[]>([
     'pear',
     'banana',
     'strawberry',
@@ -18,4 +23,12 @@ export default class PopPageComponent {
   elementDeleted: WritableSignal<(string | undefined)[]> = signal([
     this.fruits().pop(),
   ]);
+
+  public nextPage(): void {
+    this.router.navigate(['shift']);
+  }
+
+  public previousPage(): void {
+    this.router.navigate(['push']);
+  }
 }

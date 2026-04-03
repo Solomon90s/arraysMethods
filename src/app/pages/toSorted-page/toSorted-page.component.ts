@@ -1,17 +1,22 @@
 import { JsonPipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ButtonPreviousPageComponent } from '@components/button-previous-page/button-previous-page.component';
+import { ButtonNextPageComponent } from '@components/button-next-page/button-next-page.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-to-sorted-page',
-  imports: [JsonPipe],
+  imports: [JsonPipe, ButtonPreviousPageComponent, ButtonNextPageComponent],
   templateUrl: './toSorted-page.component.html',
 })
 export default class ToSortedPageComponent {
-  numbers: number[] = [8, 3, 1, 5, 6, 4, 2, 7];
+  private router: Router = inject(Router);
+
+  public numbers: number[] = [8, 3, 1, 5, 6, 4, 2, 7];
 
   numbersCloned: number[] = [...this.numbers];
 
-  alphabets: string[] = ['a', 'b', 'h', 'j', 'c', 'e', 'd'];
+  public alphabets: string[] = ['a', 'b', 'h', 'j', 'c', 'e', 'd'];
 
   alphabetsCloned: string[] = [...this.alphabets];
 
@@ -25,4 +30,12 @@ export default class ToSortedPageComponent {
   });
 
   ascAlphabets: string[] = this.alphabetsCloned.toSorted();
+
+  public nextPage(): void {
+    this.router.navigate(['toSpliced']);
+  }
+
+  public previousPage(): void {
+    this.router.navigate(['toReversed']);
+  }
 }

@@ -1,13 +1,18 @@
 import { JsonPipe } from '@angular/common';
-import { Component, signal, WritableSignal } from '@angular/core';
+import { Component, inject, signal, WritableSignal } from '@angular/core';
+import { ButtonPreviousPageComponent } from '@components/button-previous-page/button-previous-page.component';
+import { ButtonNextPageComponent } from '@components/button-next-page/button-next-page.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shift-page',
-  imports: [JsonPipe],
+  imports: [JsonPipe, ButtonPreviousPageComponent, ButtonNextPageComponent],
   templateUrl: './shift-page.component.html',
 })
 export default class ShiftPageComponent {
-  fruits: WritableSignal<string[]> = signal<string[]>([
+  private router: Router = inject(Router);
+
+  public fruits: WritableSignal<string[]> = signal<string[]>([
     'pear',
     'banana',
     'strawberry',
@@ -17,4 +22,12 @@ export default class ShiftPageComponent {
   elementDeleted: WritableSignal<(string | undefined)[]> = signal([
     this.fruits().shift(),
   ]);
+
+  public nextPage(): void {
+    this.router.navigate(['unshift']);
+  }
+
+  public previousPage(): void {
+    this.router.navigate(['pop']);
+  }
 }
